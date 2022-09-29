@@ -1,0 +1,26 @@
+<h1>Participer</h1>
+{#
+<table border="1">
+<tr>
+       <td>ref</td>
+       <td>Titre</td>
+       <td>Description</td>
+       <td>nb_participants</td>
+       <td>Participant</td>
+</tr>
+
+       {% if k.Participant == "participer" %}
+              {{ k.Titre }}
+
+<tr>
+       <td>{{ k.ref }}</td>
+       <td>{{ k.Titre|upper }}</td>
+       <td>{{ k.Description }}</td>
+       <td>{{ k.nb_participants }}</td>
+
+
+</tr>
+    {% endif %}
+
+</table>
+#}
